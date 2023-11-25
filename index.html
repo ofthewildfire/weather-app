@@ -18,7 +18,7 @@
         class="input input-xs m:input-sm md:input-md lg:input-lg input-bordered w-full max-w-lg" id="search-input" />
       <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" id="search-btn">Search</button>
     </form>
-    <div class="wrapper flex justify-between">
+    <div class="wrapper flex flex-wrap justify-between">
       <div class="weather-app__left">
         <h1 id="city" class="text-5xl">Johannesburg</h1>
         <p>
@@ -30,7 +30,7 @@
           Wind:<span class="wind"> 2.06 km/h </span>
         </p>
       </div>
-      <div class="weather-app__right text-center flex gap-4 items-center">
+      <div class="weather-app__right text-center flex gap-4 items-center flex-wrap">
         <span class="image">
           <img id="img" src="" alt="Image of the weather">
         </span>
@@ -40,10 +40,10 @@
     <hr>
     <div class="forcasted-data">
       <!-- starto -->
-      <div class="forcast-container flex gap-10 p-2 text-center">
-        <span class="future-day skeleton"></span>
+      <div class="forcast-container flex gap-10 p-2 text-center flex-wrap">
+        <!-- <span class="future-day skeleton"></span>
         <img class="future-img skeleton" src="" alt="">
-        <span class="future-temp skeleton"></span>
+        <span class="future-temp skeleton"></span> -->
       </div>
       <!-- endo -->
     </div>
