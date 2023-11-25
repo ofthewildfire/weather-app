@@ -56,6 +56,8 @@ searchBtn.addEventListener("click", (e) => {
 
 	const forecast = `https://api.shecodes.io/weather/v1/forecast?query=${searchInput}&key=fof4f42f9bd4t90cc59f3c0da512e140&units=metric`
 	axios.get(forecast).then(getForcast)
+
+	document.querySelector("#search-input").value = ""
 })
 
 async function getForcast(res) {
@@ -80,3 +82,5 @@ async function getForcast(res) {
 }
 // Days
 //
+
+// Initial call
